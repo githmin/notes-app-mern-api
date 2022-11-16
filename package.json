@@ -1,15 +1,17 @@
 {
   "dependencies": {
     "express": "^4.18.2",
-    "node": "^19.1.0"
+    "mongoose": "^6.7.2",
+    "node": "^19.1.0",
+    "nodemon": "^2.0.20"
   },
   "name": "notes-app-mern",
   "description": "",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
