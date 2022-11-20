@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 
 const notesRoute = require("./routes/notesRoute");
+const registerRoute = require("./routes/registerRoute");
 
 const mongoose = require("mongoose");
 
@@ -21,6 +22,7 @@ app.use(express.json());
 
 // API
 app.use("/api/note", notesRoute);
+app.use("/api/register", registerRoute);
 
 app.get("/", (req, res) => {
   res.send("Hello");
