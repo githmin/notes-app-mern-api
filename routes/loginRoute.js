@@ -14,7 +14,8 @@ router.post("/", async (req, res, next) => {
     // Gen an access token
     const accessToken = jwt.sign(
       { id: newLogin._id, isAdmin: newLogin.isAdmin },
-      process.env.JWT_SECRET
+      process.env.JWT_SECRET,
+      { expiresIn: "1d" }
     );
     res.status(200).json({
       id: newLogin._id,
