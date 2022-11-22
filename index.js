@@ -7,6 +7,7 @@ var cors = require('cors')
 const notesRoute = require("./routes/notesRoute");
 const registerRoute = require("./routes/registerRoute");
 const loginRoute = require("./routes/loginRoute");
+const navRoute = require("./routes/navRoute");
 
 const mongoose = require("mongoose");
 
@@ -29,6 +30,7 @@ app.use(cors())
 app.use("/api/note", notesRoute);
 app.use("/api/register", registerRoute);
 app.use("/api/login", loginRoute);
+app.use("/api/nav", navRoute);
 
 
 
