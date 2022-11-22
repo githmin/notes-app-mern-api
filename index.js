@@ -34,6 +34,6 @@ app.use("/api/nav", navRoute);
 
 
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log(`Serving on port ${process.env.PORT}`);
 });
